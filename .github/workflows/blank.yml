@@ -19,6 +19,6 @@ jobs:
       - name: Check out my other private repo
         uses: actions/checkout@master
         with:
-          repository: orgname/reponame
+          repository: pns-si3-projects/dojo-poker-22-23-ps5-22-23-poker-f
           token: ${{ secrets.PAT }}
       
