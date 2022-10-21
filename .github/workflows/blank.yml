@@ -7,6 +7,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -30,7 +33,21 @@ jobs:
       - run: mkdir staging && cp -r target/site/* staging
       - uses: actions/upload-artifact@v3
         with:
-          name: Package
+          name: docs
           path: staging
+  docs:
+    # pull the artifact from the previous job
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/download-artifact@v2
+        with:
+          name: docs
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: docs
+
       
       
