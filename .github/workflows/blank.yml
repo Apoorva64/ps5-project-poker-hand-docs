@@ -20,5 +20,5 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: orgname/reponame
-          token: ${{ secrets.pat }}
+          token: ${{ secrets.PAT }}
       
