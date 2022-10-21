@@ -30,7 +30,7 @@ jobs:
           java-version: '17'
           distribution: 'adopt'
       - run: mvn --batch-mode --update-snapshots site
-      - run: mkdir staging && cp -r target/site/* staging
+      - run: mkdir staging && cp -r target/site staging
       - uses: actions/upload-artifact@v3
         with:
           name: docs
@@ -44,10 +44,12 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: docs
+      # run tree
+      - run: ls -R
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          folder: docs
+          folder: site
 
       
       
