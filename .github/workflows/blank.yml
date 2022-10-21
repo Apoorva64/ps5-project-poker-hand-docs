@@ -21,10 +21,11 @@ jobs:
         with:
           repository: pns-si3-projects/dojo-poker-22-23-ps5-22-23-poker-f
           token: ${{ secrets.PAT }}
-              with:
+      - uses: actions/setup-java@v3
+        with:
           java-version: '17'
           distribution: 'adopt'
-      - run: mvn --batch-mode --update-snapshots site
+      - run: mvn --batch-mode --update-snapshots verify
       - run: mkdir staging && cp target/*.jar staging
       - uses: actions/upload-artifact@v3
         with:
