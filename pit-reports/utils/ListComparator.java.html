@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>ListComparator.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package utils;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Comparator;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>public class ListComparator&#60;T extends Comparable&#60;T&#62;&#62; implements Comparator&#60;List&#60;T&#62;&#62; {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int compare(List&#60;T&#62; lhs, List&#60;T&#62; rhs) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_9'/>
+9
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_9'>1</a>
+<span>
+1. compare : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (lhs.size() != rhs.size())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_10'/>
+10
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_10'>1</a>
+<span>
+1. compare : replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return Integer.compare(lhs.size(), rhs.size()); // If the size is different, the list with the biggest size is bigger</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_12'>2</a>
+<span>
+1. compare : changed conditional boundary &rarr; KILLED<br/>
+2. compare : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        for (int i = 0; i &#60; lhs.size(); i++) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_13'/>
+13
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_13'>2</a>
+<span>
+1. compare : changed conditional boundary &rarr; KILLED<br/>
+2. compare : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (lhs.get(i).compareTo(rhs.get(i)) &#62; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_14'/>
+14
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_14'>1</a>
+<span>
+1. compare : replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return 1;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_16'/>
+16
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_16'>2</a>
+<span>
+1. compare : changed conditional boundary &rarr; KILLED<br/>
+2. compare : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            if (lhs.get(i).compareTo(rhs.get(i)) &#60; 0)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_17'/>
+17
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_17'>1</a>
+<span>
+1. compare : replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>                return -1;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        return 0;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@f5314bc_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_9'>9</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_9'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestSecondary]/[method:testBiggerPower()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_10'>10</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_10'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestSecondary]/[method:testBiggerPower()]</span></span> replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestEquals]/[method:testEqualPower()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestEquals]/[method:testEqualPower()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_13'>13</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_13'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_14'>14</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_14'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsMorePowerfulThanTheSecondHand_ReturnsAHigherPowerForTheFirstHandThanTheSecondHand()]</span></span> replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_16'>16</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_16'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> changed conditional boundary &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@f5314bc_17'>17</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@f5314bc_17'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>compare<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsLessPowerfulThanTheSecondHand_ReturnsALowerPowerForTheFirstHandThanTheSecondHand()]</span></span> replaced int return with 0 for utils/ListComparator::compare &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[method:TestEqualHandType()] (2 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestSecondary]/[method:testEqualPower()] (10 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestEquals]/[method:testEqualPower()] (2 ms)</li><li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[nested-class:TestDifferentHandType]/[method:testBiggerHandType()] (3 ms)</li><li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[nested-class:TestDifferentHandType]/[method:testSmallerHandType()] (3 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestEquals]/[method:testDifferentPower()] (11 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsLessPowerfulThanTheSecondHand_ReturnsALowerPowerForTheFirstHandThanTheSecondHand()] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsMorePowerfulThanTheSecondHand_ReturnsAHigherPowerForTheFirstHandThanTheSecondHand()] (11 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestSecondary]/[method:testBiggerPower()] (3 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestSecondary]/[method:testSmallerPower()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()] (3 ms)</li><li>pokerhand.core.PowerTest.[engine:junit-jupiter]/[class:pokerhand.core.PowerTest]/[nested-class:TestComparisons]/[nested-class:TestCompareTo]/[nested-class:TestPrimary]/[method:testEqualPower()] (4 ms)</li><li>pokerhand.ConsoleInterfaceTest.[engine:junit-jupiter]/[class:pokerhand.ConsoleInterfaceTest]/[nested-class:IntegrationTests]/[method:test_main_WhenGivenTwoHandsWithOneCardBiggerThanTheOther_PrintsTheBiggerHand()] (12 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.8.0
+
+</body>
+</html>

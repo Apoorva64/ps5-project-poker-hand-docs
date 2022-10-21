@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+
+
+<h1>Hand.java</h1>
+
+<table class="src">
+
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_1'/>
+1
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_1'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>package pokerhand.core;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_2'/>
+2
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_2'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_3'/>
+3
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_3'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Arrays;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_4'/>
+4
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_4'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Collections;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_5'/>
+5
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_5'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.List;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_6'/>
+6
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_6'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>import java.util.Objects;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_7'/>
+7
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_7'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_8'/>
+8
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_8'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>public class Hand {</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_9'/>
+9
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_9'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private final List&#60;Card&#62; cards;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_10'/>
+10
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_10'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_11'/>
+11
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_11'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    public Hand(List&#60;Card&#62; cards) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_12'/>
+12
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_12'>1</a>
+<span>
+1. &#60;init&#62; : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (cards.isEmpty()) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_13'/>
+13
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_13'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>            throw new IllegalArgumentException(&#34;Hand must contain at least one card&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_14'/>
+14
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_14'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_15'/>
+15
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_15'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        this.cards = cards;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_16'/>
+16
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_16'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_17'/>
+17
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_17'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_18'/>
+18
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_18'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public static Hand fromString(String value) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_19'/>
+19
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_19'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        var cards = Arrays.stream(value.split(&#34; &#34;))</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_20'/>
+20
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_20'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                .map(Card::fromString)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_21'/>
+21
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_21'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                .toList();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_22'/>
+22
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_22'>1</a>
+<span>
+1. fromString : replaced return value with null for pokerhand/core/Hand::fromString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new Hand(cards);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_23'/>
+23
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_23'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_24'/>
+24
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_24'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_25'/>
+25
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_25'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_26'/>
+26
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_26'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public boolean equals(Object o) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_27'/>
+27
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_27'>2</a>
+<span>
+1. equals : negated conditional &rarr; KILLED<br/>
+2. equals : replaced boolean return with false for pokerhand/core/Hand::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (this == o) return true;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_28'/>
+28
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_28'>3</a>
+<span>
+1. equals : negated conditional &rarr; KILLED<br/>
+2. equals : negated conditional &rarr; KILLED<br/>
+3. equals : replaced boolean return with true for pokerhand/core/Hand::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (o == null || getClass() != o.getClass()) return false;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_29'/>
+29
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_29'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        Hand hand = (Hand) o;</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_30'/>
+30
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_30'>2</a>
+<span>
+1. equals : replaced boolean return with false for pokerhand/core/Hand::equals &rarr; KILLED<br/>
+2. equals : replaced boolean return with true for pokerhand/core/Hand::equals &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Objects.equals(cards, hand.cards);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_31'/>
+31
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_31'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_32'/>
+32
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_32'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_33'/>
+33
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_33'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_34'/>
+34
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_34'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public int hashCode() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_35'/>
+35
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_35'>1</a>
+<span>
+1. hashCode : replaced int return with 0 for pokerhand/core/Hand::hashCode &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return Objects.hash(cards);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_36'/>
+36
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_36'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_37'/>
+37
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_37'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_38'/>
+38
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_38'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private HandType calculateHandType() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_39'/>
+39
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_39'>1</a>
+<span>
+1. calculateHandType : replaced return value with null for pokerhand/core/Hand::calculateHandType &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return HandType.HIGH_CARD;</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_40'/>
+40
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_40'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_41'/>
+41
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_41'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_42'/>
+42
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_42'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    private List&#60;CardValue&#62; calculateSecondary(HandType handType) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_43'/>
+43
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_43'>1</a>
+<span>
+1. calculateSecondary : negated conditional &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        if (handType == HandType.HIGH_CARD) {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_44'/>
+44
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_44'>1</a>
+<span>
+1. calculateSecondary : replaced return value with Collections.emptyList for pokerhand/core/Hand::calculateSecondary &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>            return cards.stream()</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_45'/>
+45
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_45'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    .sorted(Collections.reverseOrder())</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_46'/>
+46
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_46'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    .map(Card::value)</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_47'/>
+47
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_47'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>                    .toList();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_48'/>
+48
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_48'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>        }</span></pre></td></tr>
+
+
+<tr>
+<td class='uncovered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_49'/>
+49
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_49'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='uncovered'><pre><span  class=''>        throw new UnsupportedOperationException(&#34;Not implemented yet&#34;);</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_50'/>
+50
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_50'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_51'/>
+51
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_51'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_52'/>
+52
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_52'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public Power getPower() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_53'/>
+53
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_53'></a>
+<span>
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class=''>        HandType handType = calculateHandType();</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_54'/>
+54
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_54'>1</a>
+<span>
+1. getPower : replaced return value with null for pokerhand/core/Hand::getPower &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return new Power(handType, calculateSecondary(handType));</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_55'/>
+55
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_55'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_56'/>
+56
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_56'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''></span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_57'/>
+57
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_57'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    @Override</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_58'/>
+58
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_58'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    public String toString() {</span></pre></td></tr>
+
+
+<tr>
+<td class='covered'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_59'/>
+59
+</td>
+<td class='killed'>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_59'>1</a>
+<span>
+1. toString : replaced return value with &#34;&#34; for pokerhand/core/Hand::toString &rarr; KILLED<br/>
+
+</span>
+</span>
+</td>
+<td class='covered'><pre><span  class='killed'>        return cards.toString();</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_60'/>
+60
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_60'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>    }</span></pre></td></tr>
+
+
+<tr>
+<td class='na'>
+<a name='org.pitest.mutationtest.report.html.SourceFile@25502b1c_61'/>
+61
+</td>
+<td class=''>
+<span class='pop'>
+<a href='#grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_61'></a>
+<span>
+</span>
+</span>
+</td>
+<td class=''><pre><span  class=''>}</span></pre></td></tr>
+
+
+
+<tr><td></td><td></td><td><h2>Mutations</h2></td></tr>
+
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_12'>12</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_12'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>&#60;init&#62;<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentObjects_ReturnsFalse()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_22'>22</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_22'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>fromString<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#10]</span></span> replaced return value with null for pokerhand/core/Hand::fromString &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_27'>27</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_27'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentObjects_ReturnsFalse()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[method:TestEqualHandType()]</span></span> replaced boolean return with false for pokerhand/core/Hand::equals &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_28'>28</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_28'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#10]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentObjects_ReturnsFalse()]</span></span> negated conditional &rarr; KILLED</p> <p class='KILLED'><span class='pop'>3.<span><b>3</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentObjects_ReturnsFalse()]</span></span> replaced boolean return with true for pokerhand/core/Hand::equals &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_30'>30</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_30'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#10]</span></span> replaced boolean return with false for pokerhand/core/Hand::equals &rarr; KILLED</p> <p class='KILLED'><span class='pop'>2.<span><b>2</b><br/><b>Location : </b>equals<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentHandTypes_ReturnsFalse()]</span></span> replaced boolean return with true for pokerhand/core/Hand::equals &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_35'>35</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_35'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>hashCode<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestHashCode]/[method:test_hashcode_WhenGivenDifferentHandTypes_ReturnsDifferentHashcode()]</span></span> replaced int return with 0 for pokerhand/core/Hand::hashCode &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_39'>39</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_39'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateHandType<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> replaced return value with null for pokerhand/core/Hand::calculateHandType &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_43'>43</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_43'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSecondary<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()]</span></span> negated conditional &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_44'>44</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_44'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>calculateSecondary<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsLessPowerfulThanTheSecondHand_ReturnsALowerPowerForTheFirstHandThanTheSecondHand()]</span></span> replaced return value with Collections.emptyList for pokerhand/core/Hand::calculateSecondary &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_54'>54</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_54'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>getPower<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsLessPowerfulThanTheSecondHand_ReturnsALowerPowerForTheFirstHandThanTheSecondHand()]</span></span> replaced return value with null for pokerhand/core/Hand::getPower &rarr; KILLED</p> 
+</td>
+</tr>
+<tr>
+<td><a href='#org.pitest.mutationtest.report.html.SourceFile@25502b1c_59'>59</a></td> 
+<td></td>
+<td>
+
+<a name='grouporg.pitest.mutationtest.report.html.SourceFile@25502b1c_59'/> 
+
+<p class='KILLED'><span class='pop'>1.<span><b>1</b><br/><b>Location : </b>toString<br/><b>Killed by : </b>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[method:test_toString_WhenGivenDifferentHands_ReturnsCorrectStringRepresentationOfTheHand()]</span></span> replaced return value with &#34;&#34; for pokerhand/core/Hand::toString &rarr; KILLED</p> 
+</td>
+</tr>
+
+</table>
+
+
+<h2>Active mutators</h2>
+<ul>
+<li class='mutator'>CONDITIONALS_BOUNDARY</li>
+<li class='mutator'>EMPTY_RETURNS</li>
+<li class='mutator'>FALSE_RETURNS</li>
+<li class='mutator'>INCREMENTS</li>
+<li class='mutator'>INVERT_NEGS</li>
+<li class='mutator'>MATH</li>
+<li class='mutator'>NEGATE_CONDITIONALS</li>
+<li class='mutator'>NULL_RETURNS</li>
+<li class='mutator'>PRIMITIVE_RETURNS</li>
+<li class='mutator'>TRUE_RETURNS</li>
+<li class='mutator'>VOID_METHOD_CALLS</li>
+
+</ul>
+
+<h2>Tests examined</h2>
+<ul>
+<li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenEqualHands_ReturnsTrue()] (20 ms)</li><li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[nested-class:TestDifferentHandType]/[method:testSmallerHandType()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#22] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsLessPowerfulThanTheSecondHand_ReturnsALowerPowerForTheFirstHandThanTheSecondHand()] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_WhenTheFirstHandIsMorePowerfulThanTheSecondHand_ReturnsAHigherPowerForTheFirstHandThanTheSecondHand()] (11 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#9] (18 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#8] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#20] (13 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#21] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenInvalidString_ThrowsIllegalArgumentException(java.lang.String)]/[test-template-invocation:#7] (6 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenInvalidString_ThrowsIllegalArgumentException(java.lang.String)]/[test-template-invocation:#6] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentObjects_ReturnsFalse()] (3 ms)</li><li>pokerhand.ConsoleInterfaceTest.[engine:junit-jupiter]/[class:pokerhand.ConsoleInterfaceTest]/[nested-class:IntegrationTests]/[method:test_main_WhenGivenTwoHandsWithOneCardBiggerThanTheOther_PrintsTheBiggerHand()] (12 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#18] (3 ms)</li><li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[method:TestEqualHandType()] (2 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#17] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#16] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#15] (4 ms)</li><li>pokerhand.core.PartyTest.[engine:junit-jupiter]/[class:pokerhand.core.PartyTest]/[nested-class:TestWinner]/[nested-class:TestDifferentHandType]/[method:testBiggerHandType()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#19] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#10] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#14] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#13] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#12] (12 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#11] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#5] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#4] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#7] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestPower]/[method:test_getPower_FromTheSameHand_ReturnsEqualPower()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#6] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#1] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#3] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestHashCode]/[method:test_hashcode_WhenGivenDifferentHandTypes_ReturnsDifferentHashcode()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestFromString]/[test-template:test_fromString_WhenGivenValidString_ReturnsCorrectHand(java.lang.String, pokerhand.core.Hand)]/[test-template-invocation:#2] (4 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestEquals]/[method:test_equals_WhenGivenDifferentHandTypes_ReturnsFalse()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[nested-class:TestComparison]/[nested-class:TestHashCode]/[method:test_hashcode_WhenGivenEqualHands_ReturnsTheSameHashCode()] (3 ms)</li><li>pokerhand.core.HandTest.[engine:junit-jupiter]/[class:pokerhand.core.HandTest]/[method:test_toString_WhenGivenDifferentHands_ReturnsCorrectStringRepresentationOfTheHand()] (2 ms)</li>
+</ul>
+
+<br/>
+
+Report generated by <a href='http://pitest.org'>PIT</a> 1.8.0
+
+</body>
+</html>
