@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Power.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">DOJO_POKERHAND</a> &gt; <a href="index.source.html" class="el_package">pokerhand.core</a> &gt; <span class="el_source">Power.java</span></div><h1>Power.java</h1><pre class="source lang-java linenums">package pokerhand.core;
+
+import utils.ListComparator;
+
+import java.util.List;
+import java.util.Objects;
+
+<span class="pc" id="L8">public record Power(HandType handType, List&lt;CardValue&gt; secondary) implements Comparable&lt;Power&gt; {</span>
+
+    @Override
+    public int compareTo(Power other) {
+        // if the handType is different, higher handType wins
+<span class="fc bfc" id="L13" title="All 2 branches covered.">        if (this.handType.compareTo(other.handType) &gt; 0)</span>
+<span class="fc" id="L14">            return 1;</span>
+
+<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (this.handType.compareTo(other.handType) &lt; 0)</span>
+<span class="fc" id="L17">            return -1;</span>
+
+        // if the primary power is the same, we can compare the secondary power
+<span class="fc" id="L20">        var comparator = new ListComparator&lt;CardValue&gt;();</span>
+<span class="fc" id="L21">        return comparator.compare(this.secondary, other.secondary);</span>
+    }
+
+    @Override
+    public boolean equals(Object other) {
+<span class="fc bfc" id="L26" title="All 2 branches covered.">        if (other instanceof Power power) {</span>
+<span class="fc bfc" id="L27" title="All 2 branches covered.">            return this.compareTo(power) == 0;</span>
+        }
+<span class="fc" id="L29">        return false;</span>
+    }
+
+    @Override
+    public int hashCode() {
+<span class="fc" id="L34">        return Objects.hash(this.handType, this.secondary);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.8.202204050719</span></div></body></html>
