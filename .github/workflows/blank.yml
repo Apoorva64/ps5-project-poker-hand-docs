@@ -24,7 +24,7 @@ jobs:
         with:
           repository: pns-si3-projects/dojo-poker-22-23-ps5-22-23-poker-f
           token: ${{ secrets.PAT }}
-          ref: feat-compare-several-cards
+          ref: main
       - uses: actions/setup-java@v3
         with:
           java-version: '17'
